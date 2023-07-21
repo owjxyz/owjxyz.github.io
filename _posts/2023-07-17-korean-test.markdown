@@ -2,7 +2,7 @@
 layout: post
 title:  "한글 포스팅 테스트"
 date:   2023-07-17 22:11:36 +0900
-categories: Javascript NodeJS
+categories: 
 ---
 안녕하세요
 가나다라마바사 아자차카타파하

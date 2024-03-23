@@ -8,11 +8,8 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    
-    Open `_data/authors.yml` to edit this text.
+    [<img width="140" alt="제목 없음-1" src="https://github.com/owjxyz/owjxyz/assets/89694988/7f185b88-cfbd-4b88-8e5e-9f2d4565268d">](https://www.postech.ac.kr)
+    Electrical Engeneering UG (2022 ~ )
 
   # This photo will be used in the about section
   picture:

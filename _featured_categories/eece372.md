@@ -3,7 +3,7 @@
 layout: list
 
 # The title of the tag's page.
-title: eece372
+title: EECE372
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
 slug: eece372

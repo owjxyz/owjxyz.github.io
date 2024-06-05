@@ -7,6 +7,8 @@ sitemap: false
 hide_last_modified: true
 ---
 
+ARM Cortex-M0+ Core
+
 <img width="700" alt="image" src="https://github.com/owjxyz/EECE372/assets/89694988/002b101a-7858-404c-a243-e367c49a0bf4">
 
 ## Basic terminology

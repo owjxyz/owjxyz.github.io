@@ -1,3 +1,14 @@
+---
+layout: post
+title: Lec. 15. Interrupts Pt.1
+description: >
+  
+sitemap: false
+hide_last_modified: true
+---
+
+Interrupts
+
 ## Recall the MCU architecture
 
 <img width="706" alt="Pasted image 20240601012031" src="https://github.com/owjxyz/EECE372/assets/89694988/f1f8ec34-7bec-4e94-b96d-510c2a6537a2">

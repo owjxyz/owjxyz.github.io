@@ -1,3 +1,14 @@
+---
+layout: post
+title: Lec. 16. Interrupts Pt.2
+description: >
+  
+sitemap: false
+hide_last_modified: true
+---
+
+Interrupts
+
 ## Software for interrupts
 인터럽트를 사용하는 프로그램
 - 시스템을 먼저 디자인한 후에 코드를 작성하여 구현

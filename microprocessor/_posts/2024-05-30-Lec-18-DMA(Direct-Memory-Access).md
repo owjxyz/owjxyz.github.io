@@ -1,3 +1,14 @@
+---
+layout: post
+title: Lec. 18. DMA(Direct Memory Access)
+description: >
+  
+sitemap: false
+hide_last_modified: true
+---
+
+DMA
+
 ## Direct memory access
 프로그램 명령어 없이 주변 하드웨어에 의해 수행되는 메모리 접근
 **Basic DMA operations**

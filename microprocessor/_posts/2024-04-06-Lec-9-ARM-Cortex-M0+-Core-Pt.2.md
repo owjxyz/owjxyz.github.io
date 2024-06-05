@@ -7,6 +7,8 @@ sitemap: false
 hide_last_modified: true
 ---
 
+ARM Cortex-M0+ Core
+
 ## How to represent an instruction
 
 기계어 혹은 어셈블리어로 작성된다.

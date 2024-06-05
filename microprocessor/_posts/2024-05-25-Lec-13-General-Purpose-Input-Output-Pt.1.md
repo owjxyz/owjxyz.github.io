@@ -1,3 +1,14 @@
+---
+layout: post
+title: Lec. 13. General Purpose Input-Output Pt.1
+description: >
+  
+sitemap: false
+hide_last_modified: true
+---
+
+General Purpose Input-Output
+
 ## Overview
 
 어떻게 임베디드 프로세서가 외부 환경을 인식하고 외부 장치를 그 응답으로 조절할 수 있을까?

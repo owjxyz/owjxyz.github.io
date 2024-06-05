@@ -1,3 +1,14 @@
+---
+layout: post
+title: Lec. 14. General Purpose Input-Output Pt.2
+description: >
+  
+sitemap: false
+hide_last_modified: true
+---
+
+General Purpose Input-Output
+
 ## Coding style for accessing control bits
 
 <img width="791" alt="Pasted image 20240531233056" src="https://github.com/owjxyz/EECE372/assets/89694988/adc4258d-d929-48b5-a27a-4f8d158cfaa0">

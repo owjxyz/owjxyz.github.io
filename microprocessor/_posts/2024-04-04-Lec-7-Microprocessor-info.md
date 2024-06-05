@@ -7,6 +7,8 @@ sitemap: false
 hide_last_modified: true
 ---
 
+Microprocessor info
+
 ## Embedded computer
 
 - IC - integrated circuit

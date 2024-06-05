@@ -3,10 +3,10 @@
 layout: list
 
 # The title of the tag's page.
-title: EECE372
+title: blogk
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: EECE372
+slug: blogk
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >

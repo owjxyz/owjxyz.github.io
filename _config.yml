@@ -51,8 +51,8 @@ author:
 menu:
   - title:             Blog
     url:               /blog/
-  #- title:             Documentation
-  #  url:               /docs/
+  - title:             Microprocessors
+    url:               /EECE372/
   - title:             About
     url:               /about/
 

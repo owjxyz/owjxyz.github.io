@@ -1,8 +1,13 @@
 ---
 layout: post
 title: Lec. 16. Interrupts Pt.2
-description: >
-  
+related_posts:
+  # Specify via the path in the file system
+  # - category/_posts/2020-01-01-other-post.md
+  # Can also use the url of the post,
+  # but this will break when changing the `permalink` setting!
+  - /microprocessor/2024-05-29-Lec-17-Timer/
+  - /microprocessor/2024-05-30-Lec-18-DMA(Direct-Memory-Access)/
 sitemap: false
 hide_last_modified: true
 ---

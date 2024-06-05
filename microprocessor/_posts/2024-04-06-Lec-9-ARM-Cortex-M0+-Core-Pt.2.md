@@ -1,8 +1,14 @@
 ---
 layout: post
 title: Lec. 9. ARM Cortex-M0+ Core Pt.2
-description: >
-  
+related_posts:
+  # Specify via the path in the file system
+  # - category/_posts/2020-01-01-other-post.md
+  # Can also use the url of the post,
+  # but this will break when changing the `permalink` setting!
+  - /microprocessor/2024-04-07-Lec-10-C-in-Assembly-Language/
+  - /microprocessor/2024-05-25-Lec-13-General-Purpose-Input-Output-Pt.1/
+  - /microprocessor/2024-05-26-Lec-14-General-Purpose-Input-Output-Pt.2/
 sitemap: false
 hide_last_modified: true
 ---

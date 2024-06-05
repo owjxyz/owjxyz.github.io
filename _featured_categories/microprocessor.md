@@ -10,7 +10,8 @@ slug: microprocessor
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  Posting about my experiences and projects.
+  Microprocessor Architect and Application
+
 
 # (Optional) You can disable grouping posts by date.
 # no_groups: true

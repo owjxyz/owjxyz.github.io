@@ -52,7 +52,7 @@ menu:
   - title:             Blog
     url:               /blog/
   - title:             Microprocessor
-    url:               /eece372/
+    url:               /microprocessor/
   - title:             About
     url:               /about/
 

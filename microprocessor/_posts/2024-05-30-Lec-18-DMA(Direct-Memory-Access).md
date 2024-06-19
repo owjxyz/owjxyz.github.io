@@ -25,12 +25,14 @@ DMA
 5. **주소 증가**: DMA 컨트롤러는 다음 전송을 위해 소스 및 목적지 주소 레지스터를 증가시킵니다.
 6. **카운트 업데이트**: DMA 컨트롤러는 전송된 항목 수를 추적하는 카운트 레지스터를 업데이트합니다. 전송할 항목이 더 있는 경우, 이 과정은 2단계부터 반복됩니다.
 7. **전송 완료 알림**: DMA 컨트롤러는 최종 전송이 완료되었음을 상태 플래그를 설정하고 인터럽트를 트리거함으로써 알립니다. (인터럽트가 활성화된 경우) -> 다른 작업 가능
-Variations
+
+#### Variations
 - 특정 경우에는 DMA 컨트롤러가 동일한 값을 모든 목적지에 복사하거나, 동일한 소스로부터 연속적인 값을 읽어들이기를 원할 수 있음
 - Two transfer modes
 	- continuous (burst) mode: 트리거되면 DMA 컨트롤러가 버스를 점유하여 전송이 완료될 때까지 데이터 전송을 멈추지 않고 계속합니다.
 	- cycle-stealing(time-sharing) mode: DMA 컨트롤러가 MCU와 버스를 공유한다. 매 트리거마다 버스를 제어하여 하나의 항목을 전송한 후 버스를 MCU에 양보한다.
-Using DMA operation
+
+#### Using DMA operation
 - 버퍼를 지운다 
 - 데이터 구조를 초기화한다
 - 프레임버퍼에 이미지를 복사한다
@@ -50,6 +52,7 @@ DMA 전송은 소프트웨어의 쓰기 동작 또는 하드웨어의 트리거 
 	- ENBL: 1인 경우 DMA 채널 활성화
 	- TRIG: 1인 경우 DMA 채널의 트리거링을 활성화
 	- SOURCE: 트리거 소스들 중 하나를 선택
+
 Controller uses a number of registers for the basic operation.
 - Source address register (SAR)
 - Destination address register (DAR)
@@ -85,11 +88,13 @@ Fields for starting the transfer
 	- 1 -> 하드웨어 트리거에 대해서 peripheral 이 전송시작을 요구하는 것을 가능하게 함
 - START()
 	- 1 -> 소프트웨어 트리거 전송 시작
+
 Fields for indicating errors
 - CE (in DMA_DSR_BCRn)
 	- Configuration error 설정 에러 발생
 - BES/BED (in DMA_DSR_BCRn)
 	- source/destination의 버스 에러
+
 Fields for indicating the current progress
 - REQ (in DMA_DSR_BCRn)
 	- 1 -> 전송이 요청됐지만 시작되지 않음
@@ -98,9 +103,11 @@ Fields for indicating the current progress
 - DONE (in DMA_DSR_BCRn)
 	- 모든 전송을 완료하면 1이됨
 	- DMA가 인터럽트를 발생시킬 때, ISR에 의해 클리어된다.
+
 Fields for the interrupt
 - EINT (DMA_DCRn) - enable interrupt
 	- 전송이 끝난 다음에 DMA 인터럽트를 활성화해줌
+
 Fields for the linked (or triggered) channel
 - CH0은 cycle-stealing 전송 이후에 CH1을 트리거
 - CH1은 CH1의 BCR이 0에 도달하면 CH2를 트리거

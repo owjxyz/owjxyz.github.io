@@ -168,17 +168,23 @@ AREA는 섹션을 지정하기 위함 (프로그램들을 보기 쉽게 구역�
 DCD는 constant 값을 메모리에 저장하는 역할로, 이후 입력한 값의 위치를 위쪽 줄의 레이블로 지정하는 것이다. 
 
 ||siA||
+
 	DCD 0x00000000 -> 0x00000000의 주소를 ||siA||에 저장
+
 |L1.312|
+
 	DCD ||siA||의 주소를 |L1.312|에 저장
+
 ;;;20 siA = 2;
 - MOVS를 통해 R1에 2라는 값이 저장이 되었고, LDR를 통해 R2에 |L1.312|가 가리키고 있는 ||siA|| 라는 주소 값이 저장되게 된다. 
 - STR를 통해 R2가 가리키고 있는 siA에 2라는 값이 저장되게 된다.
+
 ;;;21 aiB = siC + siA
 - LDR을 통해 r1에 먼저 ||siC||의 주소를 담는다.
 - LDR을 통해 r1에 ||siC||의 값을, r2에 ||siA||의 값을 각각 담는다.
 - 이후 r1에 r1과 r2의 값을 더한 값을 넣어준다. 
 - r1의 값을 \[sp, \#0xc]를 통해 aiB에 저장해준다.
+
 #### Automatically allocated memory
 Using stack
 <img width="652" alt="image" src="https://github.com/owjxyz/EECE372/assets/89694988/df55eedd-9cb9-48dd-9563-a4e804952215">

@@ -100,7 +100,9 @@ ARM Cortex-M0+ 프로세서는 ARMv6 아키텍처를 구현한다
 #### Memory map
 
 ARMv6-M architecture: 32-bit 주소 공간을 지원하고, 2^32개의 위치가 주소화될 수 있다.
+
 주소는 특정 바이트를 나타낸다 -> byte-addressable
+
 > 2^32 = 4GB의 메모리. 따라서 32bit는 최대 4GB의 메모리를 사용할 수 있음
 
 주소 공간은 각각의 사용 목적에 따라 여러 개의 구역으로 나뉜다.
@@ -112,7 +114,7 @@ ARMv6-M architecture: 32-bit 주소 공간을 지원하고, 2^32개의 위치가
 
 <img width="702" alt="image" src="https://github.com/owjxyz/EECE372/assets/89694988/9032cec0-b058-40d1-83ce-5cb2dd9b2cb0">
 
-KL25Z128VLK4에서는 128KB의 공간을 code 저장을 위한 ROM flashing 에 사용하고, 16KB 공간을 read/write memory(SRAM)
+KL25Z128VLK4에서는 128KB의 공간을 code 저장을 위한 ROM flashing 에 사용하고, 16KB 공간을 read/write memory(SRAM)에 사용
 
 ## Endianness
 

@@ -23,11 +23,9 @@ General Purpose Input-Output
 
 PORTA랑 PORTE를 1로 바꿔줌
 
--> SIM_SCGC5 = 0010_0010_0000_0000 (= 8704 = 2^13+2^9)
-
-n = (1UL << 9) | (1UL<<13); = 8704; (UL = numeric literal 컴파일러가 부호x정수로 처리)
-
-n = (1UL << PORTA) | (1UL << PORTE);
+- SIM_SCGC5 = 0010_0010_0000_0000 (= 8704 = 2^13+2^9)
+- n = (1UL << 9) | (1UL<<13); = 8704; (UL = numeric literal 컴파일러가 부호x정수로 처리)
+- n = (1UL << PORTA) | (1UL << PORTE);
 
 <img width="702" alt="Pasted image 20240531233949" src="https://github.com/owjxyz/EECE372/assets/89694988/32409441-4d18-452f-a04e-231a19d69807">
 
@@ -104,9 +102,9 @@ MUX에 해당하는 부분만 정상적으로 이동될 수 있도록 &를 통�
 
 <img width="791" alt="Pasted image 20240601003311" src="https://github.com/owjxyz/EECE372/assets/89694988/35ff6713-ee19-4f95-8309-41ac2c3f9c35">
 
-&= ~ -> CLEAR
+- &= ~ -> CLEAR
 
-|= -> SET
+- |= -> SET
 
 
 ## GPIO peripheral

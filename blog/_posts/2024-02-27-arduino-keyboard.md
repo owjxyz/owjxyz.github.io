@@ -2,7 +2,7 @@
 layout: post
 title: Arduino Keyboard 아두이노 키보드 DIY
 image: 
-  path: assets/img/blog/arduinokeyboard/ak(2).jpg
+  path: /assets/img/blog/arduinokeyboard/ak(2).jpg
 description: >
   아두이노 프로 마이크로 호환 보드와 3D프린터를 사용하여 기계식 키보드를 제작해보았다.
 sitemap: false

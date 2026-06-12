@@ -82,8 +82,10 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-theme: jekyll-theme-hydejack
-# remote_theme: hydecorp/hydejack@v9
+# GitHub Pages does not install arbitrary theme gems during its default build.
+# Use Hydejack as a remote theme there; local development can override this in
+# `_config_local.yml`.
+remote_theme: hydecorp/hydejack@v9.1.6
 
 
 # Customizaton
@@ -335,7 +337,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-titles-from-headings
   - jekyll-include-cache
-  - jekyll-last-modified-at
 
 
 # SEO Tag

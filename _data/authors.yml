@@ -2,7 +2,7 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name: Luke Oh
+  name: WooJIN Oh
   email: owj1110@icloud.com
 
   # Used at the bottom of each page and at the top of the `about` layout
@@ -16,7 +16,7 @@ author1:
 
     [<img width="102" alt="SAMSUNG" src="https://github.com/owjxyz/owjxyz/assets/89694988/370e35f7-ff28-41eb-821f-6ac40f5af5a2">](https://www.samsung-dsrecruit.com/recruits/notice/2024_winter_shiningstar/index.php) Shining Star Program 4th (2024.1)
 
-    [<img width="40" alt="ROK`AFA" src="https://raw.githubusercontent.com/owjxyz/owjxyz/5f01a715252b0758508fe30580053e433a1f15fb/assets/rokafa.svg">](https://rokaf.airforce.mil.kr/afa/index.do) S/W Development Soldier @Republic of Korea Air Force Academy  (2024.9 ~ 2026.6)
+    [<img width="40" alt="ROKAFA" src="https://raw.githubusercontent.com/owjxyz/owjxyz/5f01a715252b0758508fe30580053e433a1f15fb/assets/rokafa.svg">](https://rokaf.airforce.mil.kr/afa/index.do) S/W Development Soldier @Republic of Korea Air Force Academy  (2024.9 ~ 2026.6)
 
   # This photo will be used in the about section
   picture:

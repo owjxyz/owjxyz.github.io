@@ -48,6 +48,8 @@ author:
 
 # Add links to the sidebar.
 menu:
+  - title: Typing Practice
+    url: https://owjxyz.github.io/ttalkkak/
   - title: Blog
     url: /blog/
   - title: Travel
@@ -83,7 +85,7 @@ paginate_path: /:num/
 # GitHub Pages does not install arbitrary theme gems during its default build.
 # Use Hydejack as a remote theme there; local development can override this in
 # `_config_local.yml`.
-remote_theme: hydecorp/hydejack@v9.1.6
+remote_theme: hydecorp/hydejack@v9.2.1
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
@@ -263,7 +265,7 @@ hydejack:
   # TODO
   hide_last_modified: false
 
-  # Note that dark mode only works in the PRO version of Hydejack.
+  # Dark mode is available in the free version of Hydejack 9.2 and later.
   dark_mode:
     # Set to `true` to always use the dark theme.
     always: false

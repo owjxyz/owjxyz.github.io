@@ -58,7 +58,7 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-theme-hydejack (9.1.6)
+    jekyll-theme-hydejack (9.2.1)
       jekyll (>= 3.8, < 5.0)
       jekyll-include-cache (~> 0.2)
     jekyll-titles-from-headings (0.5.3)
@@ -117,7 +117,7 @@ DEPENDENCIES
   jekyll-relative-links
   jekyll-seo-tag
   jekyll-sitemap
-  jekyll-theme-hydejack (~> 9.1)
+  jekyll-theme-hydejack (= 9.2.1)
   jekyll-titles-from-headings
   kramdown-math-katex
   webrick

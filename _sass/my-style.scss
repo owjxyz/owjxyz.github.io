@@ -13,16 +13,6 @@
   }
 }
 
-.sidebar-sticky {
-  height: 100%;
-  padding-top: 5%;
-  position: absolute;
-}
-
-.sidebar-about {
-  padding-bottom: 10%;
-}
-
 .spread-btn {
   left: 7%;
   position: absolute;
@@ -49,11 +39,27 @@
   }
 
   input[type=checkbox] ~ ul {
-    display: none;
     list-style: none;
+    margin: 0;
+    padding-left: 1.25rem;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: max-height .28s ease, opacity .2s ease, visibility 0s linear .28s;
   }
 
   input[type=checkbox]:checked ~ ul {
-    display: block;
+    // ponytail: 12rem fits current groups; measure height if a submenu outgrows it.
+    max-height: 12rem;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-wrapper input[type=checkbox] ~ ul {
+    transition: none;
   }
 }

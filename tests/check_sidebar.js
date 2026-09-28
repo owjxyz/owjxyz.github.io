@@ -30,6 +30,11 @@ for (const dir of ['blog', 'study', 'projects', 'travel', 'microprocessor', 'abo
 }
 assert.match(fs.readFileSync(path.join(site, 'study/index.html'), 'utf8'), /href="\/microprocessor\/"/);
 assert.match(fs.readFileSync(path.join(site, 'projects/index.html'), 'utf8'), /href="https:\/\/owjxyz\.github\.io\/ttalkkak\/"/);
+const css = fs.readFileSync(path.join(site, 'assets/css/hydejack-9.2.1.css'), 'utf8');
+assert.doesNotMatch(css, /\.sidebar-sticky\{height:100%;padding-top:5%;position:absolute\}/);
+assert.doesNotMatch(css, /\.sidebar-about\{padding-bottom:10%\}/);
+assert.match(css, /\.menu-wrapper input\[type=checkbox\]~ul\{[^}]*max-height:0[^}]*transition:/);
+assert.match(css, /\.menu-wrapper input\[type=checkbox\]:checked~ul\{[^}]*max-height:[^}]*visibility:visible/);
 
 const firstCount = Number(groups[0][1].match(/onclick="spread\((\d+)\)"/)[1]);
 const elements = {

@@ -25,7 +25,11 @@
 }
 
 .spread-btn:hover {
-  color: grey;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar.invert .spread-btn:hover {
+  color: rgba(32, 32, 32, 0.2);
 }
 
 .menu-wrapper {

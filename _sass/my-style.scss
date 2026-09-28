@@ -12,3 +12,13 @@
     margin: 1rem 0;
   }
 }
+
+.sidebar-nav details > summary.sidebar-nav-item {
+  display: list-item;
+  cursor: pointer;
+}
+
+.sidebar-nav details > ul {
+  list-style: none;
+  padding-left: 1.25rem;
+}

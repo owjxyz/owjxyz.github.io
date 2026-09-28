@@ -14,3 +14,8 @@ assert.match(page, /assets\/js\/search\.js/);
 assert.ok(index.some((entry) => entry.title.includes('Arduino Keyboard')));
 assert.ok(index.some((entry) => entry.url.includes('/microprocessor/') && entry.body.length > 0));
 assert.ok(index.every((entry) => entry.url && entry.title));
+
+const css = fs.readFileSync(path.join(site, 'assets/css/hydejack-9.2.1.css'), 'utf8');
+assert.match(css, /#_search-box\{[^}]*clip-path:inset\(0 50% 0 50%\)[^}]*transition:/);
+assert.match(css, /#_search-box\.show\{[^}]*clip-path:inset\(0\)/);
+assert.match(css, /#_search-box>div\.nav-btn,#_search-box>button\{[^}]*border:0/);

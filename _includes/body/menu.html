@@ -9,8 +9,8 @@
       <button id="_search" class="nav-btn no-hover" type="button" aria-label="Search" aria-expanded="false" aria-controls="_search-box" data-index-url="{{ '/assets/search-index.json' | relative_url }}">
         <span class="icon-search" aria-hidden="true"></span>
       </button>
-      <div id="_search-box" hidden>
-        <span class="nav-btn icon-search" aria-hidden="true"></span>
+      <div id="_search-box" aria-hidden="true">
+        <div class="nav-btn" aria-hidden="true"><span class="icon-search"></span></div>
         <input id="_search-input" type="search" class="form-control form-control-lg nav-btn" placeholder="Type something…" aria-label="Search" autocomplete="off">
         <button id="_search-close" type="button" class="nav-btn no-hover" aria-label="Close search"><span class="icon-cross" aria-hidden="true"></span></button>
       </div>

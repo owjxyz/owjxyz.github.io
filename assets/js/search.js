@@ -12,7 +12,8 @@
 
   function close() {
     button.parentElement.classList.remove('search-open');
-    box.hidden = true;
+    box.classList.remove('show');
+    box.setAttribute('aria-hidden', 'true');
     hits.hidden = true;
     button.setAttribute('aria-expanded', 'false');
     input.value = '';
@@ -22,7 +23,8 @@
 
   function open() {
     button.parentElement.classList.add('search-open');
-    box.hidden = false;
+    box.classList.add('show');
+    box.setAttribute('aria-hidden', 'false');
     button.setAttribute('aria-expanded', 'true');
     input.focus();
   }
@@ -81,7 +83,7 @@
   }
 
   button.addEventListener('click', async () => {
-    if (!box.hidden) return close();
+    if (box.classList.contains('show')) return close();
     open();
     try {
       pending ||= fetch(button.dataset.indexUrl).then((response) => {
@@ -108,6 +110,6 @@
   hits.addEventListener('keydown', (event) => { if (event.key === 'Escape') close(); });
   hits.addEventListener('click', (event) => { if (event.target.closest('a')) close(); });
   closeButton.addEventListener('click', close);
-  document.addEventListener('click', (event) => { if (!event.target.closest('#_search, #_search-box, #_hits') && !box.hidden) close(); });
-  document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !box.hidden) close(); });
+  document.addEventListener('click', (event) => { if (!event.target.closest('#_search, #_search-box, #_hits') && box.classList.contains('show')) close(); });
+  document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && box.classList.contains('show')) close(); });
 })();

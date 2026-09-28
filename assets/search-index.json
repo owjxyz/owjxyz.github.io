@@ -1,0 +1,16 @@
+---
+layout: null
+---
+[
+{%- assign search_pages = site.posts | concat: site.pages -%}
+{%- assign separator = '' -%}
+{%- for item in search_pages -%}
+  {%- if item.title and item.url and item.url != '/assets/search-index.json' -%}
+    {%- assign body = item.content | markdownify | strip_html | normalize_whitespace -%}
+    {%- assign summary = item.description | default: item.excerpt | default: body | markdownify | strip_html | normalize_whitespace | truncate: 220 -%}
+    {%- assign image = item.image.path | default: item.image -%}
+    {{ separator }}{"title":{{ item.title | jsonify }},"url":{{ item.url | relative_url | jsonify }},"description":{{ summary | jsonify }},"body":{{ body | jsonify }},"image":{{ image | relative_url | jsonify }}}
+    {%- assign separator = ',' -%}
+  {%- endif -%}
+{%- endfor -%}
+]

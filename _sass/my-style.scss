@@ -13,12 +13,47 @@
   }
 }
 
-.sidebar-nav details > summary.sidebar-nav-item {
-  display: list-item;
+.sidebar-sticky {
+  height: 100%;
+  padding-top: 5%;
+  position: absolute;
+}
+
+.sidebar-about {
+  padding-bottom: 10%;
+}
+
+.spread-btn {
+  left: 7%;
+  position: absolute;
+  padding: 0;
+  padding-top: 5px;
+  border: none;
+  background: none;
+  color: white;
   cursor: pointer;
 }
 
-.sidebar-nav details > ul {
-  list-style: none;
-  padding-left: 1.25rem;
+.spread-btn:hover {
+  color: grey;
+}
+
+.menu-wrapper {
+  display: flex;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 0%;
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox] ~ ul {
+    display: none;
+    list-style: none;
+  }
+
+  input[type=checkbox]:checked ~ ul {
+    display: block;
+  }
 }

@@ -49,21 +49,24 @@ author:
 # Add links to the sidebar.
 menu:
   - title: Blog
+    url: /blog/
     submenu:
       - title: Blog
         url: /blog/
       - title: Travel
         url: /travel/
-      - title: About
-        url: /about/
   - title: Study
+    url: /study/
     submenu:
       - title: Microprocessor
         url: /microprocessor/
   - title: Projects
+    url: /projects/
     submenu:
       - title: Typing Practice
         url: https://owjxyz.github.io/ttalkkak/
+  - title: About
+    url: /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..

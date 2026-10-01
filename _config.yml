@@ -65,6 +65,8 @@ menu:
     submenu:
       - title: Typing Practice
         url: https://owjxyz.github.io/ttalkkak/
+      - title: ScreenStocker
+        url: https://owjxyz.github.io/ScreenStocker/
   - title: About
     url: /about/
 

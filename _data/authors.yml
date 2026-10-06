@@ -2,7 +2,7 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name: WooJIN Oh
+  name: WooJIN OH
   email: owj1110@icloud.com
 
   # Used at the bottom of each page and at the top of the `about` layout

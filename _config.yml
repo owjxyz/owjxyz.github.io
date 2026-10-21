@@ -49,12 +49,14 @@ author:
 # Add links to the sidebar.
 menu:
   - title: Writing
-    url: /blog/
+    url: /writing/
     submenu:
       - title: Blog
         url: /blog/
       - title: Travel
         url: /travel/
+      - title: CES 2027
+        url: /ces-2027/
   - title: Study
     url: /study/
     submenu:

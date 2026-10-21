@@ -15,9 +15,9 @@ const actual = groups.map(([, parent, children]) => [
 ]);
 
 assert.deepEqual(actual, [
-  ['/blog/', 'Blog', ['/blog/', '/travel/']],
+  ['/writing/', 'Writing', ['/blog/', '/travel/', '/ces-2027/']],
   ['/study/', 'Study', ['/microprocessor/']],
-  ['/projects/', 'Projects', ['https://owjxyz.github.io/ttalkkak/']],
+  ['/projects/', 'Projects', ['https://owjxyz.github.io/ttalkkak/', 'https://owjxyz.github.io/ScreenStocker/']],
 ]);
 assert.match(nav, /<li>\s*<div class="menu-wrapper">\s*<a[^>]*href="\/about\/"[^>]*>\s*About\s*<\/a>\s*<\/div>\s*<\/li>\s*<\/ul>/);
 assert.match(groups[0][1], /id="_drawer--opened"/);
@@ -25,9 +25,18 @@ assert.equal([...nav.matchAll(/id="folder-checkbox-\d+"/g)].length, 3);
 assert.equal([...nav.matchAll(/class="material-icons"/g)].length, 3);
 assert.match(page, /assets\/js\/sidebar-folder\.js/);
 assert.match(page, /fonts\.googleapis\.com\/icon\?family=Material\+Icons/);
-for (const dir of ['blog', 'study', 'projects', 'travel', 'microprocessor', 'about']) {
+for (const dir of ['writing', 'ces-2027', 'blog', 'study', 'projects', 'travel', 'microprocessor', 'about']) {
   assert.ok(fs.existsSync(path.join(site, dir, 'index.html')), `${dir} page missing`);
 }
+const writing = fs.readFileSync(path.join(site, 'writing/index.html'), 'utf8');
+assert.match(writing, /<h1[^>]*>\s*Writing\s*<\/h1>/);
+for (const category of ['blog', 'travel', 'ces-2027']) {
+  assert.match(writing, new RegExp(`href="/${category}/"`));
+}
+const ces = fs.readFileSync(path.join(site, 'ces-2027/index.html'), 'utf8');
+assert.match(ces, /<h1[^>]*>\s*CES 2027\s*<\/h1>/);
+assert.match(ces, /아직 등록된 글이 없습니다\./);
+assert.doesNotMatch(ces, /class="related-posts"[^>]*>[\s\S]*?<time/);
 assert.match(fs.readFileSync(path.join(site, 'study/index.html'), 'utf8'), /href="\/microprocessor\/"/);
 assert.match(fs.readFileSync(path.join(site, 'projects/index.html'), 'utf8'), /href="https:\/\/owjxyz\.github\.io\/ttalkkak\/"/);
 const css = fs.readFileSync(path.join(site, 'assets/css/hydejack-9.2.1.css'), 'utf8');
